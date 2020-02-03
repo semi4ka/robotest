@@ -1,5 +1,5 @@
 *** Settings ***
-Library 			Selenium2Library
+Library 			SeleniumLibrary
 Suite Setup			Go to google
 
 *** Test Cases ***
@@ -9,7 +9,7 @@ Suite Setup			Go to google
 
 *** Keywords ***
 Go to google
-	Open Browser 		https://google.com 		phantomjs
+	Open Browser 		https://google.com 		headlesschrome
 	
 Search and check
 	[Arguments]		${query}	${expected_result}

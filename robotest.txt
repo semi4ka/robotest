@@ -9,10 +9,7 @@ Suite Setup			Go to google
 
 *** Keywords ***
 Go to google
-	from selenium import webdriver
-	from selenium.common.exceptions import TimeoutException
-	browser = webdriver.PhantomJS()
-	Open Browser 		https://google.com 		browser
+	Open Browser 		https://google.com 		phantomjs
 	
 Search and check
 	[Arguments]		${query}	${expected_result}

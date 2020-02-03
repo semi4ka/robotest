@@ -1,5 +1,6 @@
 *** Settings ***
-Library 			SeleniumLibrary
+Library  String
+Library  DateTime
 Suite Setup			Go to google
 
 *** Test Cases ***

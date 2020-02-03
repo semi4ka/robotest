@@ -1,0 +1,17 @@
+*** Settings ***
+Library 			SeleniumLibrary
+Suite Setup			Go to google
+
+*** Test Cases ***
+Столица отображается
+	Search and check 		France 		Paris
+	
+
+*** Keywords ***
+Go to google
+	Open Browser 		https://google.com 		chrome
+	
+Search and check
+	[Arguments]		${query}	${expected_result}
+	Input Text 		css=input.gLFyf	${query}
+	Click Button 	css=input.gNO89b

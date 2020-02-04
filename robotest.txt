@@ -10,7 +10,7 @@ Suite Setup			Go to google
 
 *** Keywords ***
 Go to google
-	Open Browser 		https://google.com 		headlesschrome
+	Open Browser 		https://google.com 		schrome
 	
 Search and check
 	[Arguments]		${query}	${expected_result}

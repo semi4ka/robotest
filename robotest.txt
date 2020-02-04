@@ -9,7 +9,7 @@ Suite Setup			Go to google
 
 *** Keywords ***
 Go to google
-	Open Browser 		https://google.com 		phantomjs
+	Open Browser 		https://google.com 		headlesschrome
 	
 Search and check
 	[Arguments]		${query}	${expected_result}

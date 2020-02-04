@@ -1,5 +1,6 @@
 *** Settings ***
 Library 			Selenium2Library
+Library 			scr.py
 Suite Setup			Go to google
 
 *** Test Cases ***
